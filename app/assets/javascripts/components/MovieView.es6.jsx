@@ -5,7 +5,8 @@ render() {
   return (
     <div id="movie-container">
     <h2>{movie.Title} - {movie.Year}</h2>
-      <img src={movie.Poster} />
+      { movie.Poster != 'N/A' ? <img src={movie.Poster} />
+      : <img src='images/sadkitten.jpg'/> }
     </div>
     )}
 
