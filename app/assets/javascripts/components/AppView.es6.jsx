@@ -2,14 +2,14 @@ class AppView extends React.Component {
 constructor(){
   super()
   this.state = {
-    movie: []
+    movies: []
   }
 this.updateSearchResults = this.updateSearchResults.bind(this);
 }
 
 updateSearchResults(results) {
       this.setState({
-        movie: results
+        movies: results['Search']
       })
     }
 
@@ -17,8 +17,8 @@ updateSearchResults(results) {
 render (){
   return (
   <div>
-  <SearchBarView searchedMovie={this.updateSearchResults}/>
-  <MovieView movie={this.state.movie}/>
+  <SearchBarView searchQuery={this.updateSearchResults}/>
+  <MovieResultsView movies={this.state.movies}/>
   </div>
     )
 }

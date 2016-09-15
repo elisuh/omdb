@@ -1,21 +1,11 @@
 class MovieView extends React.Component {
-constructor(){
-  super()
-  this.state = {
-    movie: []
-  }
-}
 
 render() {
-  let movie = this.props.movie
+  let movie = this.props.data
   return (
     <div id="movie-container">
+    <h2>{movie.Title} - {movie.Year}</h2>
       <img src={movie.Poster} />
-      <h2>{movie.Title}</h2>
-      {movie.Year}<br />
-      {movie.Genre}<br />
-      {movie.Plot}<br /><br />
-      {movie.tomatoConsensus}
     </div>
     )}
 

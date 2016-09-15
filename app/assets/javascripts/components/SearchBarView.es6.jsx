@@ -10,9 +10,9 @@ handleSubmit(e) {
   searchContent = this.refs.title;
   $.ajax({
     method: 'GET',
-    url:`http://www.omdbapi.com/?t=${title}&y=&plot=short&tomatoes=true&r=json`
+    url:`http://www.omdbapi.com/?s=${title}&y=&plot=short&tomatoes=true&r=json`
   }).done((response) => {
-    this.props.searchedMovie(response);
+    this.props.searchQuery(response);
     searchContent.value = ""
   })
 }

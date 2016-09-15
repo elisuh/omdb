@@ -17,9 +17,9 @@ h1 {
   margin-left: 40%;
 }
 
-#movie-container {
+#movies-container {
   padding: 100px;
-  margin-left: 30%;
+  width: 50%;
 }
 
 #search {
