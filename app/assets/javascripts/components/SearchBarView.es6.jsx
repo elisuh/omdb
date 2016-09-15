@@ -17,8 +17,6 @@ handleSubmit(e) {
   })
 }
 
-
-
 render() {
   return (
     <div id="search-container">
