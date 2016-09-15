@@ -7,6 +7,10 @@ h1 {
   font-family: impact;
 }
 
+ul {
+ list-style-type: none;
+}
+
 #title-container {
   padding: 5px;
   margin-left: 43%;
